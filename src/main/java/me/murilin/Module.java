@@ -45,6 +45,8 @@ public class Module {
     public void unload(){
         try{
             getUnload().invoke(main);
+            this.methods = null;
+            this.main = null;
             this.classLoader = null;
             this.moduleClass = null;
         } catch (IllegalAccessException e) {
