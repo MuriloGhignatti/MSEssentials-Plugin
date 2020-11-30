@@ -77,6 +77,6 @@ public class Modules {
     }
 
     public String[] getModuleNames(){
-        return moduleNames.toArray(String[]::new);
+        return moduleNames.toArray(new String[moduleNames.size()]);
     }
 }
