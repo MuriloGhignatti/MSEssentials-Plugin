@@ -1,0 +1,11 @@
+name: MSEssentials
+version: 1.0.0
+main: me.murilin.MSEssentials
+api-version: "1.16"
+authors: [MurilinSafe]
+description: Essentials commands and events for any minecraft server
+load: POSTWORLD
+loadbefore:
+  - MSUtils
+depend:
+  - MSUtils
